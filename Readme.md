@@ -1,7 +1,7 @@
-# Личный проект «Седона»
+﻿# Личный проект «Седона»
 
 * Студент: [Boris Volgaev](https://up.htmlacademy.ru/htmlcss/26/user/926483).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Вашкевич](https://up.htmlacademy.ru/htmlcss/26/user/116959).
 
 ---
 
