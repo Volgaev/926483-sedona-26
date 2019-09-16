@@ -21,10 +21,79 @@
      <h1 class="visually-hidden">Поиск гостиниц</h1>
      <section class="filter-hotels">
        <h2 class="visually-hidden">Фильтр гостиниц</h2>
-       <!-- Фильтр -->
+       <form class="filter" method="get" action="https://echo.htmlacademy.ru/">
+         <fieldset>
+           <legend>Инфраструктура:</legend>
+           <ul>
+             <li>
+               <p>
+                 <label for="pool-checkbox">Бассейн</label>
+                 <input type="checkbox" name="pool" id="pool-checkbox" checked>
+               </p>
+             </li>
+             <li>
+               <p>
+                 <label for="parking-checkbox">Парковка</label>
+                 <input type="checkbox" name="parking" id="parking-checkbox">
+               </p>
+             </li>
+             <li>
+               <p>
+                 <label for="wi-fi-checkbox">Wi-Fi</label>
+                 <input type="checkbox" name="wi-fi" id="wi-fi-checkbox">
+               </p>
+             </li>
+           </ul>
+         </fieldset>
+         <fieldset>
+           <legend>Тип жилья:</legend>
+           <ul>
+             <li>
+               <p>
+                 <label for="hotel-checkbox">Гостиница</label>
+                 <input type="checkbox" name="hotel" id="hotel-checkbox" checked>
+               </p>
+             </li>
+             <li>
+               <p>
+                 <label for="motel-checkbox">Мотель</label>
+                 <input type="checkbox" name="motel" id="motel-checkbox" checked>
+               </p>
+             </li>
+             <li>
+               <p>
+                 <label for="apartments-checkbox">Апартаменты</label>
+                 <input type="checkbox" name="apartments" id="apartments-checkbox" checked>
+               </p>
+             </li>
+           </ul>
+         </fieldset>
+         <fieldset>
+          <legend>Стоимость в сутки:</legend>
+           <p>
+             От <output name="from">0</output>
+             До <output name="to">3000</output>
+           </p>
+           <p>
+             <input type="range" name="hotel-price" min="0" max="3000">
+           </p>
+         </fieldset>
+         <button type="submit">Показать</button>
+       </form>
      </section>
      <section class="found-hotels">
        <h2 class="visually-hidden">Найденные гостиницы</h2>
+       <p>Найдено:<output name="found">3</output></p>
+       <h3>Сортировка:</h3>
+       <ul>
+         <li><a href="#">По цене</a></li>
+         <li><a href="#">По типу</a></li>
+         <li><a href="#">По рейтингу</a></li>
+       </ul>
+       <p>
+         <a href="#">Дешевле</a>
+         <a href="#">Дороже</a>
+       </p>
      </section>
      <section>
        <h2 class="visually-hidden">Список гостиниц</h2>
