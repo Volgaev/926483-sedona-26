@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
+  <body class="inner">
     <div class="center"> <!-- Центровщик? -->
     <header>
       <a href="index.html"><img src="img/logo.svg" width="140" height="70" alt="Логотип"></a>
@@ -25,19 +25,19 @@
          <fieldset>
            <legend>Инфраструктура:</legend>
            <ul>
-             <li>
+             <li class="filter-option">
                <p>
                  <label for="pool-checkbox">Бассейн</label>
                  <input type="checkbox" name="pool" id="pool-checkbox" checked>
                </p>
              </li>
-             <li>
+             <li class="filter-option">
                <p>
                  <label for="parking-checkbox">Парковка</label>
                  <input type="checkbox" name="parking" id="parking-checkbox">
                </p>
              </li>
-             <li>
+             <li class="filter-option">
                <p>
                  <label for="wi-fi-checkbox">Wi-Fi</label>
                  <input type="checkbox" name="wi-fi" id="wi-fi-checkbox">
@@ -48,19 +48,19 @@
          <fieldset>
            <legend>Тип жилья:</legend>
            <ul>
-             <li>
+             <li class="filter-option">
                <p>
                  <label for="hotel-checkbox">Гостиница</label>
                  <input type="checkbox" name="hotel" id="hotel-checkbox" checked>
                </p>
              </li>
-             <li>
+             <li class="filter-option">
                <p>
                  <label for="motel-checkbox">Мотель</label>
                  <input type="checkbox" name="motel" id="motel-checkbox" checked>
                </p>
              </li>
-             <li>
+             <li class="filter-option">
                <p>
                  <label for="apartments-checkbox">Апартаменты</label>
                  <input type="checkbox" name="apartments" id="apartments-checkbox" checked>
@@ -78,7 +78,7 @@
              <input type="range" name="hotel-price" min="0" max="3000">
            </p>
          </fieldset>
-         <button type="submit">Показать</button>
+         <button class="button filter-button" type="submit">Показать</button>
        </form>
      </section>
      <section class="found-hotels">
@@ -100,21 +100,21 @@
        <ul class="hotel-list">
 
          <li class="hotel-item">
-            <div class="item__image-wrapper">
+            <div class="image-wrapper">
            <img src="img/amara-resort-and-spa.jpg" width="135" height="90" alt="Amara Resort & Spa">
             </div>
-            <div class="item__wrapper">
+            <div class="item-wrapper">
            <h3><a href="">Amara Resort & Spa</a></h3>
            <p>
-              <span class="item__accommodation-type">Гостиница</span>
-              <span class="item__accommodation-price">от 4000 Р.</span>
+              <span class="accommodation-type">Гостиница</span>
+              <span class="accommodation-price">от 4000 Р.</span>
            </p>
            <p>
-              <a class="item__btn-details" href="">Подробнее</a>
-              <a class="item__btn-book-now" href="">Забронировать</a>
+              <a class="button details" href="">Подробнее</a>
+              <a class="button book-now" href="">Забронировать</a>
            </p>
             </div>
-            <div class="item__rating-wrapper">
+            <div class="rating-wrapper">
               <ul class="stars-badges">
                 <li><img src="img/star.svg" alt="Четырёзвездочный отель"></li>
                 <li><img src="img/star.svg" alt=""></li>
@@ -126,21 +126,21 @@
          </li>
 
           <li class="hotel-item">
-            <div class="item__image-wrapper">
+            <div class="image-wrapper">
            <img src="img/desert-quail-inn.jpg" width="135" height="90" alt="Desert Quail Inn">
             </div>
-            <div class="item__wrapper">
+            <div class="item-wrapper">
            <h3><a href="">Desert Quail Inn</a></h3>
            <p>
-              <span class="item__accommodation-type">Мотель</span>
-              <span class="item__accommodation-price"> от 3000 Р.</span>
+              <span class="accommodation-type">Мотель</span>
+              <span class="accommodation-price"> от 3000 Р.</span>
            </p>
            <p>
-               <a class="item__btn-details" href="">Подробнее</a>
-               <a class="item__btn-book-now" href="">Забронировать</a>
+               <a class="button details" href="">Подробнее</a>
+               <a class="button book-now" href="">Забронировать</a>
            </p>
             </div>
-            <div class="item__rating-wrapper">
+            <div class="rating-wrapper">
               <ul class="stars-badges">
                 <li><img src="img/star.svg" alt="Трёхзвездочный мотель"></li>
                 <li><img src="img/star.svg" alt=""></li>
@@ -151,21 +151,21 @@
          </li>
 
           <li class="hotel-item">
-            <div class="item__image-wrapper">
+            <div class="image-wrapper">
           <img src="img/villas-at-poco-diablo.jpg" width="135" height="90" alt="Villas At Poco Diablo">
             </div>
-            <div class="item__wrapper">
+            <div class="item-wrapper">
           <h3><a href="">Villas At Poco Diablo</a></h3>
            <p>
-              <span class="item__accommodation-type">Апартаменты</span>
-              <span class="item__accommodation-price"> от 2000 Р.</span>
+              <span class="accommodation-type">Апартаменты</span>
+              <span class="accommodation-price"> от 2000 Р.</span>
            </p>
            <p>
-               <a class="item__btn-details" href="">Подробнее</a>
-               <a class="item__btn-book-now" href="">Забронировать</a>
+               <a class="button btn-details" href="">Подробнее</a>
+               <a class="button btn-book-now" href="">Забронировать</a>
            </p>
             </div>
-            <div class="item__rating-wrapper">
+            <div class="rating-wrapper">
               <ul class="stars-badges">
                 <li><img src="img/star.svg" alt="Двухзвездочные апартаменты"></li>
                 <li><img src="img/star.svg" alt=""></li>
