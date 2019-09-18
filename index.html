@@ -4,10 +4,12 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
+  <body class="index">
   <div class="center"> <!-- Центровщик? -->
     <header>
-      <img src="img/logo.svg" width="140" height="70" alt="Логотип">
+      <a href="#">
+        <img src="img/logo.svg" width="140" height="70" alt="Логотип City of Sedona">
+      </a>
       <nav>
         <ul>
           <li><a href="index.html">Информация</a></li>
@@ -18,9 +20,11 @@
       </nav>
     </header>
     <main>
-      <img src="img/welcome-sedona.svg" alt="Добро пожаловать в Седону" width="460" height="345">
-      <h1>Седона - небольшой городок в Аризоне,<br>
+      <section class="welcome-sedona">
+        <h1>Седона - небольшой городок в Аризоне,<br>
       заслуживающий большего!</h1>
+      <img src="img/welcome-sedona.svg" alt="Добро пожаловать в Седону" width="460" height="345">
+      </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <p>Рассмотрим 5 причин по которым Седона круче,
@@ -28,6 +32,7 @@
         <ul class="advantages-list">
 
           <li class="advantage-first">
+          <div class="advantage-wrap">
           <h3>Настоящий<br>
           городок<br></h3>
           <p>
@@ -35,8 +40,8 @@
           Седона — не аттракцион для туристов, там<br>
            течёт своя жизнь
          </p>
-          <div class="background-image">
-          </div>
+
+         </div>
          </li>
 
           <li>
@@ -76,8 +81,7 @@
             </li>
 
           <li class="advantage-second">
-          <div class="background-image">
-          </div>
+          <div class="advantage-wrap">
           <h3>Там есть<br>
           Мост Дьявола<br></h3>
           <p>
@@ -85,6 +89,7 @@
           Да, по нему можно пройти!  Если конечно<br>
           вы осмелитесь
          </p>
+         </div>
          </li>
 
           <li class="advantage-third">
@@ -121,36 +126,47 @@
       </section>
       <section class="hotel-search">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
-        <p><span>Заинтересовались?</span><br>
-        Укажите предполагаемые даты поездки<br>
-        И мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p><b>Заинтересовались?</b></p>
+        <p>
+        Укажите предполагаемые даты поездки
+        И мы покажем вам лучшие предложения гостиниц в Седоне
+        </p>
+         <button class="hotel-search-button" type="button">
+          Поиск гостиницы в Седоне
+         </button>
         <form  method="get" action="https://echo.htmlacademy.ru/">
           <fieldset class="hotel-search-form">
             <legend>
-        <button class="hotel-search-button" type="button">
-          Поиск гостиницы в Седоне
-        </button>
+             Поиск гостиницы в Седоне
             </legend>
             <p>
              <label for="arrival-date">Дата заезда:</label>
              <input type="text" name="arrival-date-field" id="arrival-date" placeholder="24 Апреля 2017">
-             <button class="calendar-button" type="button">Календарь</button>
+             <button class="show-calendar" type="button">Календарь</button>
             </p>
             <p>
              <label for="date-of-departure">Дата выезда:</label>
              <input type="text" name="date-of-departure-field" id="date-of-departure" placeholder="4 Июля 2017">
-             <button class="calendar-button" type="button">Календарь</button>
+             <button class="show-calendar" type="button">Календарь</button>
             </p>
             <p>
               <label for="number-of-adults">Взрослые:</label>
-              <button class="adults-reduce minus" type="button">Уменьшить </button>
+              <button class="adults-reduce minus" type="button">
+                Уменьшить количество взрослых
+              </button>
               <input type="number" name="number-of-adults-field" id="number-of-adults" value="2">
-              <button class="adults-add plus" type="button">Добавить</button>
+              <button class="adults-add plus" type="button">
+                Увеличить количество взрослых
+              </button>
 
               <label for="number-of-children">Дети:</label>
-              <button class="children-reduce minus" type="button">Уменьшить</button>
+              <button class="children-reduce minus" type="button">
+                Уменьшить количество детей
+              </button>
               <input type="number" name="number-of-children-field" id="number-of-children" value="0">
-              <button class="children-add" type="button">Добавить</button>
+              <button class="children-add" type="button">
+                Увеличить количество детей
+              </button>
             </p>
           </fieldset>
           <button type="submit">Найти</button>
@@ -171,7 +187,7 @@
       </ul>
       <p>
         Website by
-        <a href="https://htmlacademy.ru">
+        <a href="https://htmlacademy.ru" title="Перейти на HTML Academy">
         <img src="img/logo-htmlacademy.svg" width="115" height="42" alt="Логотип HTML Academy">
         </a>
       </p>

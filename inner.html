@@ -7,7 +7,7 @@
   <body class="inner">
     <div class="center"> <!-- Центровщик? -->
     <header>
-      <a href="index.html"><img src="img/logo.svg" width="140" height="70" alt="Логотип"></a>
+      <a href="index.html"><img src="img/logo.svg" width="140" height="70" alt="Логотип City of Sedona"></a>
       <nav>
         <ul>
           <li><a href="index.html">Информация</a></li>
@@ -26,22 +26,16 @@
            <legend>Инфраструктура:</legend>
            <ul>
              <li class="filter-option">
-               <p>
                  <label for="pool-checkbox">Бассейн</label>
                  <input type="checkbox" name="pool" id="pool-checkbox" checked>
-               </p>
              </li>
              <li class="filter-option">
-               <p>
                  <label for="parking-checkbox">Парковка</label>
                  <input type="checkbox" name="parking" id="parking-checkbox">
-               </p>
              </li>
              <li class="filter-option">
-               <p>
                  <label for="wi-fi-checkbox">Wi-Fi</label>
                  <input type="checkbox" name="wi-fi" id="wi-fi-checkbox">
-               </p>
              </li>
            </ul>
          </fieldset>
@@ -49,33 +43,26 @@
            <legend>Тип жилья:</legend>
            <ul>
              <li class="filter-option">
-               <p>
                  <label for="hotel-checkbox">Гостиница</label>
                  <input type="checkbox" name="hotel" id="hotel-checkbox" checked>
-               </p>
              </li>
              <li class="filter-option">
-               <p>
                  <label for="motel-checkbox">Мотель</label>
                  <input type="checkbox" name="motel" id="motel-checkbox" checked>
-               </p>
              </li>
              <li class="filter-option">
-               <p>
                  <label for="apartments-checkbox">Апартаменты</label>
                  <input type="checkbox" name="apartments" id="apartments-checkbox" checked>
-               </p>
              </li>
            </ul>
          </fieldset>
          <fieldset>
           <legend>Стоимость в сутки:</legend>
            <p>
-             От <output name="from">0</output>
-             До <output name="to">3000</output>
-           </p>
-           <p>
-             <input type="range" name="hotel-price" min="0" max="3000">
+             <label for="for-field">От</label>
+              <input type="text" name="from" id="for-field" placeholder="0">
+             <label for="to-field">До</label>
+              <input type="text" name="to" id="to-field" placeholder="3000">
            </p>
          </fieldset>
          <button class="button filter-button" type="submit">Показать</button>
@@ -83,17 +70,15 @@
      </section>
      <section class="found-hotels">
        <h2 class="visually-hidden">Найденные гостиницы</h2>
-       <p>Найдено:<output name="found">3</output></p>
+       <p>Найдено: 3</p>
        <h3>Сортировка:</h3>
        <ul>
          <li><a href="#">По цене</a></li>
          <li><a href="#">По типу</a></li>
          <li><a href="#">По рейтингу</a></li>
+         <li><a href="#">Сортировка по возрастанию</a></li>
+         <li><a href="#">Сортировка по убыванию</a></li>
        </ul>
-       <p>
-         <a href="#">Дешевле</a>
-         <a href="#">Дороже</a>
-       </p>
      </section>
      <section>
        <h2 class="visually-hidden">Список гостиниц</h2>
@@ -116,7 +101,7 @@
             </div>
             <div class="rating-wrapper">
               <ul class="stars-badges">
-                <li><img src="img/star.svg" alt="Четырёзвездочный отель"></li>
+                <li><img src="img/star.svg" alt="Рейтинг"></li>
                 <li><img src="img/star.svg" alt=""></li>
                 <li><img src="img/star.svg" alt=""></li>
                 <li><img src="img/star.svg" alt=""></li>
@@ -142,7 +127,7 @@
             </div>
             <div class="rating-wrapper">
               <ul class="stars-badges">
-                <li><img src="img/star.svg" alt="Трёхзвездочный мотель"></li>
+                <li><img src="img/star.svg" alt="Рейтинг"></li>
                 <li><img src="img/star.svg" alt=""></li>
                 <li><img src="img/star.svg" alt=""></li>
               </ul>
@@ -167,7 +152,7 @@
             </div>
             <div class="rating-wrapper">
               <ul class="stars-badges">
-                <li><img src="img/star.svg" alt="Двухзвездочные апартаменты"></li>
+                <li><img src="img/star.svg" alt="Рейтинг"></li>
                 <li><img src="img/star.svg" alt=""></li>
               </ul>
               <span class="rating-number">Рейтинг 9,2</span>
@@ -186,7 +171,7 @@
       </ul>
       <p>
         Website by
-        <a href="https://htmlacademy.ru">
+        <a href="https://htmlacademy.ru" title="Перейти на HTML Academy">
          <img src="img/logo-htmlacademy.svg" width="115" height="42" alt="Логотип HTML Academy">
         </a>
       </p>
