@@ -58,12 +58,12 @@
          </fieldset>
          <fieldset>
           <legend>Стоимость в сутки:</legend>
-           <p>
+           <div class="price">
              <label for="for-field">От</label>
               <input type="text" name="from" id="for-field" placeholder="0">
              <label for="to-field">До</label>
               <input type="text" name="to" id="to-field" placeholder="3000">
-           </p>
+           </div>
          </fieldset>
          <button class="button filter-button" type="submit">Показать</button>
        </form>
@@ -72,12 +72,14 @@
        <h2 class="visually-hidden">Найденные гостиницы</h2>
        <p>Найдено: 3</p>
        <h3>Сортировка:</h3>
-       <ul>
-         <li><a href="#">По цене</a></li>
-         <li><a href="#">По типу</a></li>
-         <li><a href="#">По рейтингу</a></li>
-         <li><a href="#">Сортировка по возрастанию</a></li>
-         <li><a href="#">Сортировка по убыванию</a></li>
+       <ul class="sort">
+         <li class="by-price"><a href="#">По цене</a></li>
+         <li class="by-type"><a href="#">По типу</a></li>
+         <li class="by-rating"><a href="#">По рейтингу</a></li>
+       </ul>
+       <ul class="sort">
+         <li class="ascending"><a href="#">Сортировка по возрастанию</a></li>
+         <li class="descending"><a href="#">Сортировка по убыванию</a></li>
        </ul>
      </section>
      <section>
@@ -102,9 +104,9 @@
             <div class="rating-wrapper">
               <ul class="stars-badges">
                 <li><img src="img/star.svg" alt="Рейтинг"></li>
-                <li><img src="img/star.svg" alt=""></li>
-                <li><img src="img/star.svg" alt=""></li>
-                <li><img src="img/star.svg" alt=""></li>
+                <li><img src="img/star.svg" alt="Рейтинг"></li>
+                <li><img src="img/star.svg" alt="Рейтинг"></li>
+                <li><img src="img/star.svg" alt="Рейтинг"></li>
               </ul>
               <span class="rating-number">Рейтинг 8,5</span>
             </div>
@@ -128,8 +130,8 @@
             <div class="rating-wrapper">
               <ul class="stars-badges">
                 <li><img src="img/star.svg" alt="Рейтинг"></li>
-                <li><img src="img/star.svg" alt=""></li>
-                <li><img src="img/star.svg" alt=""></li>
+                <li><img src="img/star.svg" alt="Рейтинг"></li>
+                <li><img src="img/star.svg" alt="Рейтинг"></li>
               </ul>
               <span class="rating-number">Рейтинг 8,9</span>
             </div>
@@ -153,7 +155,7 @@
             <div class="rating-wrapper">
               <ul class="stars-badges">
                 <li><img src="img/star.svg" alt="Рейтинг"></li>
-                <li><img src="img/star.svg" alt=""></li>
+                <li><img src="img/star.svg" alt="Рейтинг"></li>
               </ul>
               <span class="rating-number">Рейтинг 9,2</span>
             </div>
@@ -173,6 +175,7 @@
         Website by
         <a href="https://htmlacademy.ru" title="Перейти на HTML Academy">
          <img src="img/logo-htmlacademy.svg" width="115" height="42" alt="Логотип HTML Academy">
+         Перейти на HTML Academy
         </a>
       </p>
     </footer>
