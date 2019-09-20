@@ -3,17 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class="inner">
     <div class="center"> <!-- Центровщик? -->
-    <header>
+    <header class="main-header">
       <a href="index.html"><img src="img/logo.svg" width="140" height="70" alt="Логотип City of Sedona"></a>
       <nav>
         <ul>
           <li><a href="index.html">Информация</a></li>
           <li><a href="">Фото и видео</a></li>
           <li><a href="">Карта штата</a></li>
-          <li><a href="inner.html">Гостиницы</a></li>
+          <li><a href="inner.html" class="active">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -82,7 +85,7 @@
          <li class="descending"><a href="#">Сортировка по убыванию</a></li>
        </ul>
      </section>
-     <section>
+     <section >
        <h2 class="visually-hidden">Список гостиниц</h2>
        <ul class="hotel-list">
 
@@ -164,16 +167,16 @@
        </ul>
      </section>
     </main>
-    <footer>
+    <footer class="main-footer">
       <p>#VISITSEDONA</p>
       <ul>
-        <li><a href=""><img src="img/t-icon.svg" alt="Twitter" width="17" height="15">Twitter</a></li>
-        <li><a href=""><img src="img/fb-icon.svg" alt="Facebook" width="12" height="22">Facebook</a></li>
-        <li><a href=""><img src="img/youtube-icon.svg" width="20" height="16" alt="YouTube">YouTube</a></li>
+        <li><a class="twitter" href=""><img src="img/t-icon.svg" alt="Twitter" width="17" height="15">Twitter</a></li>
+        <li><a class="fb" href=""><img src="img/fb-icon.svg" alt="Facebook" width="12" height="22">Facebook</a></li>
+        <li><a class="youtube" href=""><img src="img/youtube-icon.svg" width="20" height="16" alt="YouTube">YouTube</a></li>
       </ul>
       <p>
         Website by
-        <a href="https://htmlacademy.ru" title="Перейти на HTML Academy">
+        <a class="html-academy" href="https://htmlacademy.ru" title="Перейти на HTML Academy">
          <img src="img/logo-htmlacademy.svg" width="115" height="42" alt="Логотип HTML Academy">
          Перейти на HTML Academy
         </a>

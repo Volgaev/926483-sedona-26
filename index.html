@@ -3,16 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class="index">
   <div class="center"> <!-- Центровщик? -->
-    <header>
+    <header class="main-header">
       <a>
         <img src="img/logo.svg" width="140" height="70" alt="Логотип City of Sedona">
       </a>
       <nav>
         <ul>
-          <li><a href="index.html">Информация</a></li>
+          <li><a href="index.html" class="active">Информация</a></li>
           <li><a href="">Фото и видео</a></li>
           <li><a href="">Карта штата</a></li>
           <li><a href="inner.html">Гостиницы</a></li>
@@ -33,7 +36,7 @@
 
           <li class="advantage-first">
           <div class="advantage-wrap">
-          <h3>Настоящий<br>
+          <h3>Настоящий
           городок<br></h3>
           <p>
             — №1 —
@@ -93,7 +96,7 @@
          </li>
 
           <li class="advantage-third">
-            <h3>Небольшая<br>
+            <h3>Небольшая
              площадь</h3>
           <p>
             — №3 —
@@ -103,7 +106,7 @@
          </li>
 
           <li class="advantage-fourth">
-            <h3>Красивая<br>
+            <h3>Красивая
              дорога</h3>
           <p>
             — №4 —
@@ -113,7 +116,7 @@
          </li>
 
           <li class="advantage-fifth">
-            <h3>Мало<br>
+            <h3>Мало
              туристов</h3>
           <p>
             — №5 —
@@ -131,23 +134,23 @@
         Укажите предполагаемые даты поездки<br>
         И мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-         <button class="hotel-search-button" type="button">
+         <button class="search-button" type="button">
           Поиск гостиницы в Седоне
          </button>
         <form  method="get" action="https://echo.htmlacademy.ru/">
-          <fieldset class="hotel-search-form">
+          <fieldset class="search-form">
             <legend>
              Поиск гостиницы в Седоне
             </legend>
             <p>
              <label for="arrival-date">Дата заезда:</label>
              <input type="text" name="arrival-date-field" id="arrival-date" placeholder="24 Апреля 2017">
-             <button class="show-calendar" type="button">Календарь</button>
+             <button class="show-calendar" type="button">Показать календарь</button>
             </p>
             <p>
              <label for="date-of-departure">Дата выезда:</label>
              <input type="text" name="date-of-departure-field" id="date-of-departure" placeholder="4 Июля 2017">
-             <button class="show-calendar" type="button">Календарь</button>
+             <button class="show-calendar" type="button">Показать календарь</button>
             </p>
             <p>
               <label for="number-of-adults">Взрослые:</label>
@@ -169,7 +172,7 @@
               </button>
             </p>
           </fieldset>
-          <button type="submit">Найти</button>
+          <button class="button to-find" type="submit">Найти</button>
         </form>
       </section>
       <section class="interactive-map">
@@ -178,12 +181,12 @@
         <img src="img/map.jpg" width="1200" height="593" alt="Местоположение Седоны">
       </section>
     </main>
-    <footer>
+    <footer class="main-footer">
       <p>#VISITSEDONA</p>
       <ul>
-        <li><a href=""><img src="img/t-icon.svg" alt="Twitter" width="17" height="15">Twitter</a></li>
-        <li><a href=""><img src="img/fb-icon.svg" alt="Facebook" width="12" height="22">Facebook</a></li>
-        <li><a href=""><img src="img/youtube-icon.svg" width="20" height="16" alt="YouTube">YouTube</a></li>
+        <li><a class="twitter" href=""><img src="img/t-icon.svg" alt="Twitter" width="17" height="15">Twitter</a></li>
+        <li><a class="fb" href=""><img src="img/fb-icon.svg" alt="Facebook" width="12" height="22">Facebook</a></li>
+        <li><a class="youtube" href=""><img src="img/youtube-icon.svg" width="20" height="16" alt="YouTube">YouTube</a></li>
       </ul>
       <p>
         Website by
