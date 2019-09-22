@@ -45,7 +45,7 @@ body {
 .social-links .youtube:active,
 .inner .button:active,
 .button:active {
-  color: #76abca;
+  color: rgba(118, 171, 202, 1);
   background-color: #5496bd;
 
 }
@@ -86,7 +86,7 @@ body {
 
 .hotel-item a:active,
 .main-header a:active {
-  color: #b2b2b2;
+  color: rgba(178, 178, 178, 1);
 
 }
 
@@ -134,6 +134,10 @@ body {
 
 }
 
+.button.details:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
 .button.book-now:hover {
  color: rgba(255, 255, 255, 1);
  background-color: rgba(96, 78, 67, 1);
@@ -141,7 +145,7 @@ body {
 }
 
 .button.book-now:active {
- color: #81746d;
+ color: rgba(129, 116, 109, 1);
  background-color: #503e33;
 
 }
@@ -232,7 +236,7 @@ color: #333333;
 }
 
 .hotel-search .search-button:active {
-  color: #857871;
+  color: rgba(133, 120, 113, 1);
   background-color: #503e33;
 
 }
