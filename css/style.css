@@ -13,6 +13,7 @@ body {
 
 }
 
+
 .center {
   text-align: center;
 
@@ -87,6 +88,111 @@ body {
 .hotel-item a:active,
 .main-header a:active {
   color: rgba(0, 0, 0, 0.3);
+
+}
+
+.filter-hotels {
+  color: #ffffff;
+  background-color: #4378a4;
+
+  background-position: top;
+  background-image: url("../img/filter-background.jpg");
+  background-repeat: no-repeat;
+
+  box-shadow: 0 0 5px rgba( 0, 0, 0, 0.2);
+
+}
+
+.filter-hotels fieldset {
+ border: none;
+}
+
+.filter-hotels ul {
+  list-style: none;
+}
+
+.filter-hotels legend {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.filter-hotels .price {
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+
+}
+
+.found-hotels {
+  background-color: #ffffff;
+  box-shadow: 0 0 5px rgba( 0, 0, 0, 0.2);
+}
+
+.found-hotels ul {
+  list-style: none;
+
+}
+
+.found-hotels li {
+ font-size: 12px;
+ line-height: 18px;
+
+}
+
+.by-price,
+.by-type,
+.by-rating {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #81b3d2;
+  text-decoration-style: dashed;
+
+  font-size: 12px;
+  line-height: 18px;
+
+}
+
+.found-hotels a.active {
+  color: #81b3d2;
+  text-decoration: none;
+}
+
+.found-hotels .by-type:hover,
+.found-hotels .by-rating:hover {
+  color:  #81b3d2;
+}
+
+.sort a.by-type:active,
+.sort a.by-rating:active {
+  color:  #000000;
+  text-decoration: none;
+}
+
+
+.found-hotels p {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+
+}
+
+.found-hotels h3 {
+  font-size: 12px;
+  font-weight: 18px;
+
+}
+
+.filter-hotels .filter-button {
+ background-color: transparent;
+ border: 2px solid #ffffff;
+ border-radius: 2px;
+
+}
+
+.filter-hotels .filter-button:hover {
+ color: #000000;
+ background-color: #ffffff;
+ border: 2px solid #ffffff;
+ border-radius: 2px;
 
 }
 
@@ -184,8 +290,21 @@ body {
 }
 
 .index h1 {
+  background-color: #ffffff;
+
   font-size: 21px;
   font-weight: 700;
+
+  box-shadow: 1px 0 0 rgba( 0, 0, 0, 0.2),
+             -1px 0 0 rgba( 0, 0, 0, 0.2);
+
+}
+
+
+.advantages {
+  background-color: #ffffff;
+
+  box-shadow: 0 0 5px rgba( 0, 0, 0, 0.2);
 
 }
 
@@ -193,6 +312,86 @@ body {
   color: #333333;
   line-height: 26px;
 
+}
+
+.advantages ul {
+  list-style: none;
+
+}
+
+.advantages h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+
+}
+
+.advantages-list p {
+  line-height: 21px;
+
+}
+
+.advantages-list .advantage-first,
+.advantages-list .advantage-second {
+  color: #ffffff;
+  background-color: #81b3d2;
+
+}
+
+.advantage-first p,
+.advantage-second p {
+  color: #ffffff;
+
+}
+
+.advantage-first {
+  text-align: left;
+
+}
+
+.advantage-first .advantage-wrap {
+  background-position: top right;
+  background-image: url("../img/index-sedona-img.jpg");
+  background-repeat: no-repeat;
+
+}
+
+.advantage-second {
+  text-align: right;
+
+}
+
+.advantage-second .advantage-wrap {
+ background-position: top left;
+ background-image: url("../img/devils-bridge.jpg");
+ background-repeat: no-repeat;
+
+}
+
+.advantage .house-icon {
+
+ background-image: url("../img/house-icon.svg");
+ background-repeat: no-repeat;
+
+}
+
+.advantage .burger-icon {
+
+ background-image: url("../img/burger-icon.svg");
+ background-repeat: no-repeat;
+
+}
+
+.advantage .present-icon {
+
+ background-image: url("../img/present-icon.svg");
+ background-repeat: no-repeat;
+
+}
+.advantages-list .advantage-third,
+.advantages-list .advantage-fourth,
+.advantages-list .advantage-fifth {
+ background-color: #eeeeee;
 }
 
 .hotel-search {
