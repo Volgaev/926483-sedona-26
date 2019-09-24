@@ -116,12 +116,6 @@ body {
   font-weight: 700;
 }
 
-.filter-hotels .price {
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-
-}
-
 .found-hotels {
   background-color: #ffffff;
   box-shadow: 0 0 5px rgba( 0, 0, 0, 0.2);
@@ -141,10 +135,8 @@ body {
 .by-price,
 .by-type,
 .by-rating {
-  color: inherit;
-  text-decoration: underline;
-  text-decoration-color: #81b3d2;
-  text-decoration-style: dashed;
+  color: #b1b1b1;
+  text-decoration: none;
 
   font-size: 12px;
   line-height: 18px;
@@ -177,22 +169,20 @@ body {
 
 .found-hotels h3 {
   font-size: 12px;
-  font-weight: 18px;
+  line-height: 18px;
 
 }
 
 .filter-hotels .filter-button {
+ line-height: 21px;
  background-color: transparent;
- border: 2px solid #ffffff;
- border-radius: 2px;
+
 
 }
 
 .filter-hotels .filter-button:hover {
  color: #000000;
  background-color: #ffffff;
- border: 2px solid #ffffff;
- border-radius: 2px;
 
 }
 
@@ -331,12 +321,27 @@ body {
 
 }
 
-.advantages-list .advantage-first,
+
+.advantages-list .advantage-first {
+
+  background-position: right;
+  background-image: url("../img/index-sedona-img.jpg");
+  background-repeat: no-repeat;
+}
 .advantages-list .advantage-second {
+  background-position: left;
+  background-image: url("../img/devils-bridge.jpg");
+  background-repeat: no-repeat;
+
+}
+
+.advantage-wrap {
+
   color: #ffffff;
   background-color: #81b3d2;
 
 }
+
 
 .advantage-first p,
 .advantage-second p {
@@ -349,24 +354,12 @@ body {
 
 }
 
-.advantage-first .advantage-wrap {
-  background-position: top right;
-  background-image: url("../img/index-sedona-img.jpg");
-  background-repeat: no-repeat;
-
-}
-
 .advantage-second {
   text-align: right;
 
 }
 
-.advantage-second .advantage-wrap {
- background-position: top left;
- background-image: url("../img/devils-bridge.jpg");
- background-repeat: no-repeat;
 
-}
 
 .advantage .house-icon {
 
@@ -481,6 +474,15 @@ input::-moz-placeholder {
 
 input::-webkit-input-placeholder {
   color: #000000;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
 .to-find {
