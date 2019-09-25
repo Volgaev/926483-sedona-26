@@ -135,8 +135,12 @@ body {
 .by-price,
 .by-type,
 .by-rating {
-  color: #b1b1b1;
-  text-decoration: none;
+  color: rgba( 0, 0, 0, 0.3);
+
+
+  text-decoration: underline;
+  text-decoration-color: #81b3d2;
+  text-decoration-style: dashed;
 
   font-size: 12px;
   line-height: 18px;
@@ -176,6 +180,9 @@ body {
 .filter-hotels .filter-button {
  line-height: 21px;
  background-color: transparent;
+
+ border: 2px solid #ffffff;
+ border-radius: 2px;
 
 
 }
