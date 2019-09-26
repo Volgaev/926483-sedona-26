@@ -533,3 +533,165 @@ input::-webkit-inner-spin-button {
 .social-links .youtube {
   background-color: #81b3d2;
 }
+
+
+
+
+/* Стили построения сетки */
+
+body.index {
+  min-width: 1030px;
+  min-height: 2760px;
+}
+
+body.index {
+
+  background-image: url("../sedona-index.jpg");
+  background-size: 1280px auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body.inner {
+ min-width: 1280px;
+ min-height: 930px;
+}
+
+
+
+.main-header {
+
+
+  min-height: 50px;
+  margin: 0 75px;
+
+}
+
+.main-navigation {
+
+  min-height: 55px;
+
+}
+
+.main-logo {
+ width: 137px;
+ height: 70px;
+ margin: 0 auto;
+
+}
+
+.site-navigation ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  min-height: 56px;
+
+}
+
+.site-navigation li {
+  width: 275px;
+
+}
+
+.filter-hotels {
+  width: 1200px;
+  min-height: 202px;
+  margin: 0 auto;
+
+
+
+}
+
+.found-hotels {
+  width: 1200px;
+  min-height: 85px;
+  margin: 0 auto;
+
+}
+
+.hotels {
+  width: 1200px;
+  min-height: 455px;
+  margin: 0 auto;
+
+}
+
+.hotel-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 455px;
+  margin: 0;
+
+}
+
+.hotel-item {
+  width: 1200px;
+  min-height: 150px;
+  margin-right: 40px;
+}
+
+.welcome-sedona {
+    min-height: 550px;
+    margin: 0 75px;
+}
+
+.index h1 {
+
+  min-height: 55px;
+  margin-top: 0;
+  margin: 0 75px;
+
+}
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+  min-height: 1200px;
+  margin: 0 75px;
+
+}
+
+.hotel-search {
+  display: flex;
+  flex-direction: column;
+  min-height: 690px;
+  margin: 0 75px;
+
+}
+
+.hotel-search form {
+ width: 565px;
+ min-height: 395px;
+ margin: 0 auto;
+ margin-top: auto;
+
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-around;
+  min-height: 120px;
+  margin: 0 75px;
+
+}
+
+.main-footer p {
+  width: 170px;
+  min-height: 50px;
+
+}
+
+.main-footer p:last-child {
+ width: 200px;
+
+}
+
+.main-footer ul {
+
+  min-width: 170px;
+  min-height: 50px;
+
+}
+
