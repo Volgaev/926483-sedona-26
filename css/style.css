@@ -577,21 +577,47 @@ body.inner {
 
 }
 
+
 .filter-hotels {
   width: 100%;
   min-height: 202px;
   margin: 0 auto;
 
+}
 
+.filter ul:first-child {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
 
+.filter li:nth-child(2) {
+  margin-right: auto;
 }
 
 .found-hotels {
+  display: flex;
   width: 100%;
   min-height: 85px;
   margin: 0 auto;
+  padding: 0;
+}
+
+.sort {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-right: auto;
 
 }
+
+.found-hotels ul:last-child {
+  margin-right: 0;
+  margin-left: auto;
+
+}
+
 
 .hotels {
   width: 100%;
@@ -649,10 +675,60 @@ body.inner {
 }
 
 .advantages {
-  display: flex;
-  flex-direction: column;
+
   min-height: 1200px;
-  margin: 0 75px;
+  margin: 0 auto;
+
+}
+
+.advantages-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+.advantage-first,
+.advantage-second {
+  width: 100%;
+    min-height: 256px;
+
+}
+
+.advantage-wrap {
+  width: 400px;
+  min-height: 256px;
+
+}
+
+
+.advantage-second .advantage-wrap {
+  margin-left: auto;
+
+}
+
+
+.advantage-third,
+.advantage-fourth,
+.advantage-fifth {
+  width: 400px;
+  min-height: 256px;
+
+}
+
+.advantages-list ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+}
+
+.advantage {
+  width: 400px;
+  min-height: 256px;
 
 }
 
@@ -676,6 +752,12 @@ body.inner {
  display: flex;
 
  padding: 0;
+ margin: 0 auto;
+
+}
+
+.interactive-map {
+ min-height: 472px;
  margin: 0 auto;
 
 }
